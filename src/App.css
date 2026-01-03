@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+/* Base App styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page transition animation */
+.page-transition {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alternative slide animation - you can choose this instead */
+
+.page-transition {
+  animation: slideIn 1s ease-out;
+  -webkit-animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+}
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Alternative scale animation - you can choose this instead */
+/* 
+.page-transition {
+  animation: scaleIn 0.4s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */

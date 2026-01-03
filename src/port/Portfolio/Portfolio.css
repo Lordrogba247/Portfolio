@@ -1,0 +1,175 @@
+.portfolio {
+  color: #a06144;
+  padding: 60px 40px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-head h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.portfolio-head p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -webkit-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -moz-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -ms-transition: transform 0.4s ease, box-shadow 0.4s ease;
+  -o-transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(160, 97, 68, 0.4);
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .portfolio {
+    padding: 50px 30px;
+    margin-top: 10%;
+  }
+
+  .portfolio-head h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-head p {
+    font-size: 1rem;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 40px 20px;
+    margin-top: 15%;
+  }
+
+  .portfolio-head {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-head h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .portfolio-head p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 640px) {
+  .portfolio {
+    padding: 35px 15px;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .portfolio-item img {
+    max-height: 400px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 30px 15px;
+    margin-top: 18%;
+  }
+
+  .portfolio-head {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-head h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .portfolio-head p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio-gallery {
+    gap: 15px;
+  }
+
+  .portfolio-item img {
+    max-height: 350px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .portfolio {
+    padding: 25px 10px;
+  }
+
+  .portfolio-head h1 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-head p {
+    font-size: 0.85rem;
+  }
+
+  .portfolio-gallery {
+    gap: 12px;
+  }
+
+  .portfolio-item img {
+    max-height: 300px;
+  }
+}
